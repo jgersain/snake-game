@@ -1,4 +1,5 @@
-require_relative "model/state.rb"
+# include other ruby files using relative path
+require_relative "model/state"
 require_relative "view/ruby2d"
 
 
