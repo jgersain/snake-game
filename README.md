@@ -14,3 +14,6 @@ Quick start for Ubuntu
 - `chruby ruby-{RUBY_VERSION}`
 - `gem install bundler`
 - `bundle install`
+
+- run test example `bundle exec ruby test/actions_test.rb`
+- run game `bundle exec ruby src/app.rb`
