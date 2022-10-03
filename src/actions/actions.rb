@@ -27,11 +27,9 @@ module Actions
   private
 
   def self.generate_food(state)
-    new_food = Model::Food.new(
-      rand(state.grid.rows),
-      rand(state.grid.cols)
-    )
-    state.food = new_food
+    pos = [rand(state.grid.rows), rand(state.grid.cols)]
+    pos = [rand(state.grid.rows), rand(state.grid.cols)] while state.snake.positions.include? pos
+    state.food = Model::Food.new(*pos)
     state
   end
 
